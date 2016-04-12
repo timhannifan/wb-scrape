@@ -1,0 +1,58 @@
+<template name="app_layout">
+<paper-drawer-panel class="flex">
+  
+	<paper-header-panel drawer>
+		<paper-toolbar>
+		  <span class="type-title">Scraping the Skills Gap: Malaysia</span>
+		</paper-toolbar>
+		<paper-menu class="nav">
+			<paper-item  paper-drawer-toggle data-action="about" class="menu-trigger">
+				    <iron-icon icon="icons:info" item-icon></iron-icon>About
+			</paper-item>
+			<paper-submenu class="nav-submenu">
+				<paper-item class="menu-trigger">
+					<iron-icon icon="icons:dns" item-icon></iron-icon>Sources
+				</paper-item>
+				<paper-menu class="menu-content" id="submenu">
+					<paper-item paper-drawer-toggle data-action="sources">Monster.com</paper-item>
+					<paper-item paper-drawer-toggle data-action="job_street_sources">JobStreet.com</paper-item>
+				</paper-menu>
+			</paper-submenu>
+
+			<paper-submenu>
+				<paper-item class="menu-trigger">
+					<iron-icon icon="icons:view-list" item-icon></iron-icon>Data
+				</paper-item>
+				<paper-menu class="menu-content" id="submenu">
+					<paper-item paper-drawer-toggle data-action="data">Monster</paper-item>
+					<paper-item paper-drawer-toggle data-action="job_street_data">Job Street</paper-item>
+					<paper-item paper-drawer-toggle data-action="data">Combined</paper-item>
+				</paper-menu>
+			</paper-submenu>
+
+			<paper-submenu>
+				<paper-item class="menu-trigger">
+					    <iron-icon icon="icons:perm-data-setting" item-icon></iron-icon>Utilities
+				</paper-item>
+				<paper-menu class="menu-content" id="submenu">
+				  <paper-item paper-drawer-toggle data-action="upload">Import CSV</paper-item> 
+				  <paper-item paper-drawer-toggle data-action="export">Export CSV</paper-item>
+				  <paper-item paper-drawer-toggle data-action="new_monster_source">New Monster RSS</paper-item>
+				  <paper-item paper-drawer-toggle data-action="newJobstreetSource">New JobStreet Specialization</paper-item>
+				</paper-menu>
+			</paper-submenu>
+
+		</paper-menu>
+	</paper-header-panel>
+	<paper-header-panel main>
+		<div class="flex">
+			<div class="vertical-center-justified layout">
+				<div class="page-container">
+				    {{> yield}}		
+				</div>
+			</div>
+		</div>
+	</paper-header-panel>
+</paper-drawer-panel>
+
+</template>

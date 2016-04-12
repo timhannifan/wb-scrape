@@ -1,0 +1,43 @@
+meteor-base
+mobile-experience
+mongo
+
+blaze
+blaze-html-templates
+jquery
+tracker
+
+# standard-minifier-css
+# standard-minifier-js
+es5-shim
+ecmascript
+
+underscore
+check
+reactive-dict
+reactive-var
+session
+http
+coffeescript
+less
+
+iron:router
+reywood:publish-composite
+aldeed:simple-schema
+aldeed:collection2
+aldeed:autoform
+aldeed:template-extension
+dburles:collection-helpers
+matb33:collection-hooks
+percolatestudio:synced-cron@1.1.0
+anti:fake
+
+meteorhacks:inject-initial
+differential:vulcanize
+momentjs:moment
+aldeed:tabular
+rclai89:cheerio
+harrison:papa-parse
+fortawesome:fontawesome
+# d3js:d3
+# yaki-local

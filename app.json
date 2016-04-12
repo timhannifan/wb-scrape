@@ -1,0 +1,8 @@
+{
+  "name": "wb-scrape",
+  "description": "Malaysia skills gap analysis using RSS feeds, HTML scraping, d3.js",
+  "env": {
+  	"NODE_ENV" : "production"
+  }
+}
+
